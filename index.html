@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/estilos/style.css"/>
+    
+<link rel="icon" href="/img/icono-médico-de-la-lista-de-control-del-tablero-98099141.jpg" sizes="32x32" type="image/png">
+</head>
+<body>
+    <header>
+<img src="/img/fondo.jpg" class="marco">
+<nav>
+    <ul>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="/index.html">Reserva de horas</a></li>
+    </ul>
+</nav>
+</header>
+       
+<h1><strong> Formulario Reservas Médicas </strong> </h1> 
+    <HR>
+<form action="RESPONSE.HTML" method="GET">
+    <div>
+    <label for="nombre"> NOMBRE</label>
+    <input type ="text" placeholder="Ingrese Nombre" required>
+   </div>
+    
+   <div>
+  
+    <label for="especialidad">ESPECIALIDAD</label>
+    <input type="text" list="especialidades" id="especialidad" name="especialidad" placeholder="Seleccione especialidad" required>
+    <datalist id="especialidades">
+      <option value="Medicina interna"></option>
+      <option value="Medicina general"></option>
+      <option value="Traumatología"></option>
+      <option value="Nutricionista"></option>
+      <option value="Cardiología"></option>
+      <option value="Pediatría"></option>  
+    </datalist>
+</div>  
+<div>
+    <label for="fecha"> FECHA </label>
+    <input type ="date" required placeholder="Seleccione fecha">    
+</div>  
+<div>
+    <label for="hora"> HORA </label>
+    <input type ="time" required>    
+</div>  
+<div>
+    <label for="correo"> CORREO </label>
+    <input type="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="Ingrese correo"required>    
+</div>  
+<div>
+    <button type="submit">Enviar</button>
+</div>
+</form>
+        
+
+<footer>
+    Síguenos en 
+    <a title="instagram" href="https://www.instagram.com/"><img src="/img/Instagram-Logo.jpg" class="instagram" /></a>
+    <br>
+    Todos los derechos reservados ®
+ </footer>
+
+</body>
+</html>
